@@ -6,11 +6,30 @@ You might find this a useful alternative to Apple's Push Notification Service fo
 
 NOTE: Juggernaut supports several different transports, but this uses just websocket.
 
-## Subscribe
+## Subscribing
 
     JuggernautClient *client = [[JuggernautClient alloc] initWithHost:@"localhost" port:8080];
 
     [client subscribe:@"channel1"];
+
+## Getting Messages
+
+Incoming messages are posted as notifications.  You'll add an observer...
+
+  [[NSNotificationCenter defaultCenter] addObserver:handler
+                                           selector:@selector(didReceiveMessage:)
+                                               name:JuggernautDidReceiveMessageNotification
+                                             object:nil];
+
+and handle the notification...
+
+   - (void)didReceiveMessage:(NSNotification *)notification {
+     NSString *message = [notification object];
+     
+     // Message will look like {"data":"some message","channel":"channel1"}
+     // and you can run this through your own JSON parser.
+   }
+
 
 ## Depends on
 
