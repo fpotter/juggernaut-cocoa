@@ -5,5 +5,6 @@ A Cocoa interface to Alex MacCaw's [Juggernaut](https://github.com/maccman/jugge
 ## Subscribe
 
     JuggernautClient *client = [[JuggernautClient alloc] initWithHost:@"localhost" port:8080];
+
     [client subscribe:@"channel1"];
 
