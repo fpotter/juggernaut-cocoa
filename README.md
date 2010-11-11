@@ -10,9 +10,9 @@ A Cocoa interface to Alex MacCaw's [Juggernaut](https://github.com/maccman/jugge
 
 ## Depends on
 
-* AsyncSocket [](http://code.google.com/p/cocoaasyncsocket/)
-* Cocoa WebSocket [](https://github.com/erichocean/cocoa-websocket)
-* SocketIo Client for Cocoa [](https://github.com/fpotter/socketio-cocoa)
+* AsyncSocket [http://code.google.com/p/cocoaasyncsocket/](http://code.google.com/p/cocoaasyncsocket/)
+* Cocoa WebSocket [https://github.com/erichocean/cocoa-websocket](https://github.com/erichocean/cocoa-websocket)
+* SocketIo Client for Cocoa [https://github.com/fpotter/socketio-cocoa](https://github.com/fpotter/socketio-cocoa)
  
 ## Adding to your project
 
