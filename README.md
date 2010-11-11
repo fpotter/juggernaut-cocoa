@@ -4,6 +4,8 @@ A Cocoa interface to Alex MacCaw's [Juggernaut](https://github.com/maccman/jugge
 
 You might find this a useful alternative to Apple's Push Notification Service for in-app push scenarios.  This can work while running in the simulator, while Apple's push service only works on the real device.
 
+NOTE: Juggernaut supports several different transports, but this uses just websocket.
+
 ## Subscribe
 
     JuggernautClient *client = [[JuggernautClient alloc] initWithHost:@"localhost" port:8080];
