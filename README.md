@@ -37,9 +37,25 @@ and handle the notification...
 * Cocoa WebSocket [https://github.com/erichocean/cocoa-websocket](https://github.com/erichocean/cocoa-websocket)
 * SocketIo Client for Cocoa [https://github.com/fpotter/socketio-cocoa](https://github.com/fpotter/socketio-cocoa)
  
+## Getting the code
+
+If you have git 1.7+ ...
+
+    git clone git://github.com/fpotter/juggernaut-cocoa.git --recursive
+    
+or, earlier ...
+
+    git clone git://github.com/fpotter/juggernaut-cocoa.git juggernaut-cocoa
+    cd juggernaut-cocoa
+    git submodule init
+    git submodule update
+    cd socketio-cocoa
+    git submodule init
+    git submodule update
+ 
 ## Adding to your project
 
-Copy the `AsyncSocket.h`, `AsyncSocket.m`, `WebSocket.h`, `WebSocket.m`, `SocketIoClient.h`, `SocketIoClient.m` files to your project.
+Copy the `AsyncSocket.h`, `AsyncSocket.m`, `WebSocket.h`, `WebSocket.m`, `SocketIoClient.h`, `SocketIoClient.m`, `JuggernautClient.h`, `JuggernautClient.m` files to your project.
 
 **If you're building for iOS**, make sure you add a reference to the `CFNetwork` framework or you'll see compile errors from AsyncSocket.
 
