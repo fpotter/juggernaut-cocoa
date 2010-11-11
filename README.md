@@ -2,6 +2,8 @@
 
 A Cocoa interface to Alex MacCaw's [Juggernaut](https://github.com/maccman/juggernaut) realtime push system.  Works on Mac or iPhone.
 
+You might find this a useful alternative to Apple's Push Notification Service for in-app push scenarios.  This can work while running in the simulator, while Apple's push service only works on the real device.
+
 ## Subscribe
 
     JuggernautClient *client = [[JuggernautClient alloc] initWithHost:@"localhost" port:8080];
