@@ -18,5 +18,5 @@ A Cocoa interface to Alex MacCaw's [Juggernaut](https://github.com/maccman/jugge
 
 Copy the `AsyncSocket.h`, `AsyncSocket.m`, `WebSocket.h`, `WebSocket.m`, `SocketIoClient.h`, `SocketIoClient.m` files to your project.
 
-If you're building for iOS, make sure you add a reference to the `CFNetwork` framework or you'll see compile errors from AsyncSocket.
+**If you're building for iOS**, make sure you add a reference to the `CFNetwork` framework or you'll see compile errors from AsyncSocket.
 
