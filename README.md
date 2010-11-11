@@ -16,19 +16,19 @@ NOTE: Juggernaut supports several different transports, but this uses just webso
 
 Incoming messages are posted as notifications.  You'll add an observer...
 
-  [[NSNotificationCenter defaultCenter] addObserver:handler
-                                           selector:@selector(didReceiveMessage:)
-                                               name:JuggernautDidReceiveMessageNotification
-                                             object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:handler
+                                             selector:@selector(didReceiveMessage:)
+                                                 name:JuggernautDidReceiveMessageNotification
+                                               object:nil];
 
 and handle the notification...
 
-   - (void)didReceiveMessage:(NSNotification *)notification {
-     NSString *message = [notification object];
+    - (void)didReceiveMessage:(NSNotification *)notification {
+        NSString *message = [notification object];
      
-     // Message will look like {"data":"some message","channel":"channel1"}
-     // and you can run this through your own JSON parser.
-   }
+        // Message will look like {"data":"some message","channel":"channel1"}
+        // and you can run this through your own JSON parser.
+    }
 
 
 ## Depends on
