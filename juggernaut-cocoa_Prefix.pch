@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'juggernaut-cocoa' target in the 'juggernaut-cocoa' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
